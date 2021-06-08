@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Textarea auto-grow</h1>
+
+    <textarea data-controller="textarea-autogrow">
+        Very long text here.
+    </textarea>
+
+    <div data-controller="hello"></div>
+
+    <h1
+            data-controller="animated-number"
+            data-animated-number-start-value="4"
+            data-animated-number-end-value="0"
+            data-animated-number-duration-value="6000"
+
+    >
+        0
+    </h1>
+{% endblock %}
+

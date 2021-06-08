@@ -12,9 +12,13 @@ RUN apk add --no-cache \
         gettext \
         git \
         jq \
+        libpng \
+        libpng-dev \
+        libjpeg-turbo-dev \
     ;
 
 ARG APCU_VERSION=5.1.18
+
 RUN set -eux; \
 	apk add --no-cache --virtual .build-deps \
 	    $PHPIZE_DEPS \
@@ -49,6 +53,11 @@ RUN set -eux; \
 	apk add --no-cache --virtual .phpexts-rundeps $runDeps; \
 	\
 	apk del .build-deps
+
+# GD for lazy-image
+RUN docker-php-ext-configure gd --with-jpeg \
+  && docker-php-ext-install -j "$(nproc)" gd
+
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 

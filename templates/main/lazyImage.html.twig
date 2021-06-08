@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Lazy Image</h1>
+
+
+    <img
+            src="{{ data_uri_thumbnail('build/images/plage.jpg', 100, 75) }}"
+            data-controller="symfony--ux-lazy-image--lazy-image"
+            data-hd-src="{{ asset('build/images/plage.jpg') }}"
+
+            {# Using BlurHash, the size is required #}
+            width="200"
+            height="150"
+    />
+{% endblock %}
+
