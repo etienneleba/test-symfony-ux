@@ -1,14 +1,16 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <h1>Textarea auto-grow</h1>
-
+    <h1>Stimulus components</h1>
+    <br><br>
     <textarea data-controller="textarea-autogrow">
         Very long text here.
     </textarea>
+    <br>
+    <br>
 
     <div data-controller="hello"></div>
-
+    <br><br>
     <h1
             data-controller="animated-number"
             data-animated-number-start-value="4"
@@ -18,5 +20,27 @@
     >
         0
     </h1>
+    <br><br>
+
+    <div data-controller="password-visibility">
+        <input type="password" data-password-visibility-target="input"/>
+
+        <button type="button" data-action="password-visibility#toggle">
+            <span data-password-visibility-target="icon">Eye</span>
+            <span data-password-visibility-target="icon" class="hidden">Eye Slash</span>
+        </button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 {% endblock %}
 

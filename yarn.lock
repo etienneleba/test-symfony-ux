@@ -4811,6 +4811,11 @@ stimulus-animated-number@^2.0.0:
   resolved "https://registry.yarnpkg.com/stimulus-animated-number/-/stimulus-animated-number-2.0.0.tgz#2fad46876d89b4bc00017b31773ee1c7f381cb1a"
   integrity sha512-9K8pMglZrnmLvdWW40NXl1SdARYscvBlJB9R35KbB3qbeLZcjL1rZaHCyORQlgo0Xp/F0kuZS6V1SNQCkC0YnQ==
 
+stimulus-password-visibility@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/stimulus-password-visibility/-/stimulus-password-visibility-1.1.1.tgz#563ce85997a0aff3b5e8bd3241533e926ab827e9"
+  integrity sha512-6dJqXwu4rtqKfF9hAsLCQTURbs9vFtqkyaqxNVe+lNuqV0D35PH+zeJXUmcYwFOojD2Vqg6Yyh+1IqHvkJQabA==
+
 stimulus-scroll-progress@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/stimulus-scroll-progress/-/stimulus-scroll-progress-2.0.0.tgz#f0a1b0f27039d78837da2493412b14f569e7c922"

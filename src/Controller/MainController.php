@@ -16,9 +16,6 @@ class MainController extends AbstractController
      */
     public function index(): Response
     {
-        $cache = new FilesystemAdapter('app.cache');
-        $cache->delete()
-
         return $this->render('main/index.html.twig', [
             'controller_name' => 'MainController',
         ]);
